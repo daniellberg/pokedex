@@ -1,65 +1,67 @@
-.container{
-    background-color: antiquewhite;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
 }
 
-.main{
-    width: 500px;
-    height: 500px;
-    background-color: grey;
-    border: 2px solid #000000;
-    border-radius:35px;
-    display: inline;
-    align-items: center;
+body {
+    text-align: center;
+    background: linear-gradient(to bottom, #6ab7f5, #fff);
+    min-height: 100vh;
 }
 
-.top{
-    display: flex;
-    justify-content: center;
-    background-color: #8fb45e;
-    height: 49%;
-    width: 100;
-    border-radius: 30px;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
+
+main {
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
 }
 
-.bottom{
-    display: flex;
-    justify-content: space-between;
-    background-color: #b1cac3;
-    height: 49%;
-    width: 100;
-    border-radius: 30px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    /* margin: 0 10px 30px 10px; */
+.pokedex {
+    width: 100%;
+    max-width: 425px;
 }
 
-.left{
-    width: 49%;
-    border-radius: 20px;
-    background-color: aqua;
-    margin: 10px 10px;
+.pokemon_image {
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%, 20%);
+    height: 18%;
 }
 
-.right{
-    width: 49%;
-    border-radius: 20px;
-    background-color: #0ed49f;
-    margin: 10px 10px;
+.pokemon_data{
+    position: absolute;
+    font-weight: 600;
+    color: #aaa;
+    top: 54.5%;
+    right: 29%;
+    font-size: clamp(8px, 5vh, 25px);
 }
 
-.main .ball{
-    border-radius: 50%;
-    background-color: #000000;
-    width: 30px;
-    height: 30px;
-    transform: translateX(235px) translateY(-265px)
+.pokemon_number{
+    color: black;
+    text-transform: capitalize;
+}
+
+form{
+   position: absolute;
+   width: 65%; 
+   top: 65%;
+   left: 13.5%
+}
+
+.search{
+  width : 100%;
+  padding: 4%;
+  outline: none;
+  border: 2px solid #333;
+  border-radius: 600;
+  color: #3a3a3a;
+  font-size: clamp(8px, 5vh, 1rem);  
+  box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
 }
